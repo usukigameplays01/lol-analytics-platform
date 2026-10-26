@@ -78,3 +78,11 @@ class Evento(Base):
     tipo: Mapped[str] = mapped_column(String)
     equipo: Mapped[int] = mapped_column(Integer)
     detalle: Mapped[str] = mapped_column(String)
+
+class Jugador(Base):
+    __tablename__ = "jugadores"
+
+    puuid: Mapped[str] = mapped_column(String, primary_key=True)
+    tier: Mapped[str] = mapped_column(String)
+    division: Mapped[str] = mapped_column(String)
+    procesado: Mapped[bool] = mapped_column(Boolean, default=False)
