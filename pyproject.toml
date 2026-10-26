@@ -2,7 +2,7 @@
 name = "lolanalytics"
 version = "0.1.0"
 requires-python = ">=3.10"
-dependencies = ["requests", "python-dotenv"]
+dependencies = ["requests", "python-dotenv", "sqlalchemy", "psycopg[binary]"]
 
 [tool.setuptools.packages.find]
 where = ["src"]
